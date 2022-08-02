@@ -1,0 +1,8 @@
+# defaults file for kibana
+---
+  kb_version: "{{ kb_distr_name.split('-')[:1] | join('-') }}"
+  kb_home: "/opt/kibana/{{ kb_version }}"
+  kb_distr_name: "{{ kibana[710] }}"
+#  elk_distr_type: local
+#  kb_distr_name: 7.10.1-linux-x86_64.tar.gz
+
